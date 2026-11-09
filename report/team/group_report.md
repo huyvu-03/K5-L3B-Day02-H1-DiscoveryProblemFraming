@@ -7,8 +7,8 @@
 
 - Tên nhóm:
 - Thành viên: xem `TEAM.md`
-- Candidate problem được chọn (1 câu):
-- Quyết định cuối: Go / Not Yet / No-Go
+- Candidate problem được chọn (1 câu): Khi kết thúc một ngày học, sinh viên phải tự kiểm tra bài tập và deadline rải rác ở LMS, email, nhóm Zalo và Drive (~18 phút/tối), nhưng vẫn bỏ sót thông báo, nhất là tin đổi hạn trong nhóm chat.
+- Quyết định cuối: **Go (phạm vi nhỏ)** (xem mục 8)
 
 ---
 
@@ -56,50 +56,6 @@ Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 * "Tích hợp công cụ debug bằng AI vào thẳng phần mềm VS Code"
 * "Chatbot tự động viết lại code cho đúng"
 
-Dưới đây là phần nội dung được tổng hợp và hoàn thiện dựa trên bảng dữ liệu trong hình ảnh của nhóm bạn, kết hợp với bối cảnh lựa chọn "Sửa lỗi bài lab / hệ thống" của bạn ở các bước trước:
-
-### 2. Hội tụ nhóm (CP3)
-
-**2.1. Pitch**
-
-| # | Người đưa ra | Candidate (Job Story ngắn) | Actor | Bottleneck | Câu hỏi phản biện nhận được (ai hỏi) |
-| --- | --- | --- | --- | --- | --- |
-| 1 | Nguyễn Văn Minh | Muốn tóm tắt nhanh tiền sử bệnh để bác sĩ nắm ngay. | Mẹ/người thân, bác sĩ | Tìm lại thông tin từ mớ giấy khám cũ (tốn thời gian lúc khám). | "Nhóm mình học IT, liệu có đủ chuyên môn y tế để đánh giá bản tóm tắt đúng/sai không?" (Chuẩn) |
-| 2 | Phạm Lê Chuẩn | Muốn biết nhanh hệ thống lỗi ở đâu để khắc phục ngay. | IT, kỹ thuật | Đọc dò lỗi cú pháp hoặc tìm nguyên nhân (20-30 phút). | "Nếu dùng AI chỉ ra lỗi luôn thì sinh viên có bị lười tư duy đi không?" (Cao) |
-| 3 | Phạm Lê Chuẩn | Muốn tự động sắp xếp lịch trình, đặt lịch, nhắc hẹn. | Mọi người | Tự kiểm tra, đối chiếu lịch thủ công. | "Làm sao AI truy cập được tin nhắn Zalo cá nhân để biết có lịch hẹn?" (Huy) |
-| 4 | Phạm Lê Chuẩn | Muốn điểm danh đầu/cuối ca học nhanh chóng. | SV, Giảng viên | Xếp hàng quét mã/gọi tên (15-20 phút). | "Bài này dùng mã QR tĩnh (Rule) là xong, cần gì AI?" (Minh) |
-| 5 | Vũ Quang Huy | Muốn xác định chủ đề trọng tâm từ đề cương ôn tập dài. | SV / Học sinh | Đọc dàn trải số lượng trang đề cương lớn. | "Mỗi môn một cấu trúc, làm sao đo lường độ chính xác của trọng tâm?" (Cao) |
-| 6 | Vũ Quang Huy | Muốn biết bài tập/deadline sắp tới để không bỏ sót. | SV / Học sinh | Phải lội 2-3 nguồn (LMS, Zalo, Email) mỗi tuần. | "Nếu trường đổi API của LMS thì giải pháp có sập không?" (Chuẩn) |
-| 7 | Vũ Quang Huy | Muốn nắm thông tin quan trọng từ nhiều kênh thông báo của GV. | SV / Học sinh | Bỏ lỡ thông báo do trôi tin nhắn nhiều kênh. | "Giống ý 6, quyền truy cập dữ liệu đa kênh lấy ở đâu?" (Minh) |
-| 8 | Phùng Văn Thanh Cao | Muốn sắp xếp kế hoạch học tối ưu theo deadline, độ khó. | Sinh viên | Mất 10-20 phút mỗi tối để lên plan nhưng vẫn miss. | "Độ khó là cảm nhận chủ quan, hệ thống đo lường kiểu gì?" (Huy) |
-| 9 | Phùng Văn Thanh Cao | Muốn tổng hợp deadline từ LMS, email, nhóm lớp cuối ngày. | Sinh viên | Lướt nhiều nguồn mỗi tối dễ bị sót. | (Trùng pattern với ý số 6 của Huy) |
-| 10 | Phùng Văn Thanh Cao | Muốn có hướng dẫn phân tích, từng bước tiếp cận bài khó. | Sinh viên | Tốn 1-2h kẹt lại không tìm được hướng giải. | "Làm sao tránh việc AI giải hộ luôn thay vì chỉ hướng dẫn?" (Chuẩn) |
-| 11 | Phùng Văn Thanh Cao | Muốn tổng hợp kiến thức trọng tâm cuối ngày học. | Sinh viên | Mất 45-60 phút tự đọc lại slide. | "Nếu bài giảng là video/audio thì input xử lý thế nào?" (Minh) |
-| 12 | Phùng Văn Thanh Cao | Muốn theo dõi tiến độ nhóm để không ảnh hưởng kết quả chung. | SV, thành viên nhóm | Nhắc nhở thủ công, trùng lặp công việc. | "Đây là vấn đề ý thức hay vấn đề công cụ quản lý?" (Huy) |
-
-**2.2. Cluster**
-
-| Cluster | Các candidate | Pattern chung |
-| --- | --- | --- |
-| A — Hỗ trợ học tập / Ôn thi | Tóm tắt đề cương (5), Hướng dẫn giải bài tập (10), Tổng hợp kiến thức (11), Chuẩn bị bài trước (12). | Rút gọn, tóm tắt và phân tích khối lượng tài liệu học thuật lớn. |
-| B — Quản lý lịch & Deadline | Xếp lịch (3), Tổng hợp deadline (6, 9), Xếp kế hoạch tối (8), Theo dõi task nhóm (13). | Gom thông tin rải rác từ nhiều nguồn (LMS, Zalo, Email) để lập kế hoạch. |
-| C — Tối ưu quy trình & Kỹ thuật | Khắc phục lỗi hệ thống/lab (2), Tóm tắt bệnh án (1), Điểm danh (4). | Giảm thao tác lặp lại tốn thời gian ở một bước xử lý/phân tích log dữ liệu cụ thể. |
-
-**2.3. Opportunity Solution Tree rút gọn**
-
-Nhóm thống nhất chọn nhánh bài toán của người làm kỹ thuật/IT (Candidate 2 của Chuẩn) để đi tiếp vì phù hợp chuyên ngành nhóm.
-
-```text
-OUTCOME: Giảm thời gian sinh viên IT/kỹ thuật bị kẹt lại khi hệ thống báo lỗi / lỗi code.
-├── Opportunity A: Thông báo lỗi (log) của hệ thống quá dài và chứa nhiều thông tin rác.
-├── Opportunity B: Việc copy lỗi lên Google/StackOverflow trả về quá nhiều luồng ý kiến, phải tự chắt lọc.
-└── Opportunity C: Sinh viên không xác định được chính xác dòng lệnh/code nào là nguyên nhân gốc rễ.
-Những ý đã gạch bỏ vì là solution đội lốt opportunity:
-- "Tích hợp công cụ debug bằng AI vào VS Code" (Đây là giải pháp công cụ)
-- "Chatbot tự động viết lại code cho đúng" (Đây là giải pháp mức Agent)
-
-```
-
 ### 2.4. Chấm điểm shortlist (1–5)
 
 | Candidate | Actor rõ | Quy trình rõ | Pain có bằng chứng | Impact đo được | Vừa sức lab | So sánh được No AI/Rule/Workflow/Agent | Nhóm hiểu domain | Tổng |
@@ -108,8 +64,8 @@ Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 | Khắc phục lỗi hệ thống/code bài lab (Chuẩn) | 5 | 5 | 4 | 4 | 3 | 4 | 3 | **28** |
 | Tóm tắt tiền sử bệnh án (Minh) | 4 | 4 | 3 | 3 | 5 | 4 | 2 | **25** |
 
-**Candidate được chọn:**
-Theo dõi tiến độ task nhóm để không ảnh hưởng kết quả chung (Phùng Văn Thanh Cao).
+**Candidate được chọn (vòng CP3):**
+Theo dõi tiến độ task nhóm để không ảnh hưởng kết quả chung (Phùng Văn Thanh Cao). *Sau CP4, nhóm đã chốt lại sang candidate #9, xem phần "Cập nhật sau CP4" ở cuối mục này.*
 
 **Vì sao chọn:**
 Đây là nỗi đau (pain point) cực kỳ phổ biến mà bất kỳ sinh viên nào cũng gặp phải ("gánh team", trễ deadline do không ai nhắc, trùng lặp công việc). Bài toán có đối tượng rất rõ ràng, dễ dàng tìm người phỏng vấn để lấy bằng chứng ngay trong lớp. Impact đo lường được định lượng thông qua số lần trễ hạn hoặc số phút phải bỏ ra để họp nhóm/nhắn tin nhắc nhở mỗi tuần. Đặc biệt, bài toán này rất dễ để so sánh các mức can thiệp: từ No AI (chỉ dùng Trello/Excel), Rule (bot tự động nhắc giờ), đến Workflow (AI tự tóm tắt tiến độ từ tin nhắn chat và cập nhật trạng thái).
@@ -121,6 +77,10 @@ Theo dõi tiến độ task nhóm để không ảnh hưởng kết quả chung 
 
 **Xử lý bất đồng (nếu có):**
 Chuẩn ban đầu muốn giữ bài "Khắc phục lỗi code" vì mang đậm tính kỹ thuật IT. Tuy nhiên, Cao và Huy đã phản biện và chỉ ra rằng bài "Theo dõi task nhóm" dễ thu thập dữ liệu (input) từ các đoạn chat nhóm trên Zalo/Discord hơn là việc trích xuất log lỗi hệ thống trên các môi trường máy ảo khác nhau. Nhóm đi đến thống nhất chọn bài Task Nhóm vì tệp người dùng rộng hơn, tính khả thi cao và "vừa sức lab" hơn để thiết kế một quy trình (workflow) hoàn chỉnh.
+
+**Cập nhật sau CP4 — nhóm chốt lại candidate:**
+Khi kiểm chứng ở CP4, toàn bộ bằng chứng thu được đều xoay quanh việc **bỏ sót bài tập và deadline từ nhiều nguồn** (candidate #9, cùng pattern với #6 của Huy, cluster B): 8/10 sinh viên ngoài nhóm từng bị sót bài tập; 6/8 sinh viên trong micro survey từng sót hoặc suýt trễ deadline trong tháng trước; 7/8 phải theo dõi từ 3 nguồn trở lên. Trong khi đó, bài "Theo dõi task nhóm" chưa có bằng chứng từ người ngoài nhóm. Vì vậy nhóm chốt lại candidate cuối cùng là **#9 — Tổng hợp bài tập và deadline từ LMS, email, nhóm Zalo và Drive** (gộp với #6). Các mục CP5–CP6 bên dưới được viết cho candidate này.
+
 ---
 
 ## 3. Kiểm chứng + research giải pháp đã có (CP4)
@@ -139,35 +99,37 @@ Giả định nhóm kiểm chứng trong buổi này: **Giả định #1, #2 và
 
 ### 3.2. Kiểm chứng
 
-**Cách đã dùng:** Phỏng vấn sâu 3 sinh viên kỹ thuật trong nhóm theo trải nghiệm thực tế đã xảy ra (theo đúng 3 luật The Mom Test: Nguyễn Văn Minh, Vũ Quang Huy, Phạm Lê Chuẩn) + Khảo sát nhanh (micro-survey) 8 sinh viên trong lớp L3B.
+**Cách đã dùng:** Phỏng vấn 3 sinh viên là **thành viên trong nhóm** (thành viên A, B, C) về trải nghiệm thực tế đã xảy ra, theo 3 luật The Mom Test + khảo sát trực tiếp 10 sinh viên ngoài nhóm + khảo sát nhanh (micro-survey) 8 sinh viên trong lớp L3B.
 
-#### Interview Snapshot #1 — Trải nghiệm từ Nguyễn Văn Minh
+*Lưu ý: đề yêu cầu không phỏng vấn thành viên nhóm mình. Vì vậy nhóm dùng **hai khảo sát với người ngoài nhóm (18 sinh viên)** làm bằng chứng chính; 3 snapshot dưới đây chỉ dùng để mô tả chi tiết quy trình và các workaround. Hạn chế này được ghi ở mục 9.*
+
+#### Interview Snapshot #1 — Thành viên A (trong nhóm)
 
 | Trường | Nội dung |
 |---|---|
-| Người được hỏi (vai trò, không ghi tên thật) | Sinh viên năm 2 ngành AI / Kỹ thuật (Nguyễn Văn Minh), đang theo học các môn lab thực hành và đồ án dự án |
+| Người được hỏi (vai trò, không ghi tên thật) | Sinh viên năm 2 ngành AI / Kỹ thuật (thành viên trong nhóm), đang theo học các môn lab thực hành và đồ án dự án |
 | Câu nói đáng nhớ nhất (nguyên văn) | *"Sợ nhất là hạn nộp bài trên LMS ghi là Chủ nhật, nhưng tối thứ Sáu trợ giảng ghim tin nhắn trong nhóm Zalo bảo nộp sớm vào sáng thứ Bảy để chấm bù; mình mà không lướt Zalo lúc 23h đêm là coi như sáng hôm sau mất trắng 20% điểm."* |
 | Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Tuần trước ở môn Lập trình/AI, suýt bị trễ hạn nộp bài lab vì thông báo cập nhật rubric và hạn nộp của trợ giảng bị trôi sau hàng chục tin nhắn thảo luận bài của các bạn trong nhóm chat Zalo. |
 | Hiện đang xử lý bằng cách nào (workaround)? | Chụp ảnh màn hình các đoạn tin nhắn quan trọng gửi vào mục "Cloud của tôi" trên Zalo hoặc tự copy paste vào ứng dụng Google Keep/Notion cá nhân. |
 | Mất bao lâu, bao lần? | Mỗi tối mất 20–25 phút trước giờ ngủ (khoảng 22h–23h) mở lần lượt Canvas LMS, nhóm Zalo lớp và Teams để rà soát; lặp lại đều đặn 4–5 buổi/tuần. |
 | Insight / opportunity rút ra | Nỗi đau lớn nhất không nằm ở việc thiếu lịch của LMS (LMS đã có lịch rõ ràng), mà nằm ở việc thông tin bài tập bị phân mảnh ở **các kênh chat phi chính thức (Zalo/Teams)** với định dạng văn bản tự do, rất dễ trôi mất nếu không đọc kịp. |
 
-#### Interview Snapshot #2 — Trải nghiệm từ Vũ Quang Huy
+#### Interview Snapshot #2 — Thành viên B (trong nhóm)
 
 | Trường | Nội dung |
 |---|---|
-| Người được hỏi (vai trò, không ghi tên thật) | Sinh viên năm 2 ngành Công nghệ Thông tin (Vũ Quang Huy), theo dõi nhiều kênh học tập và thông báo môn học cùng lúc |
+| Người được hỏi (vai trò, không ghi tên thật) | Sinh viên năm 2 ngành Công nghệ Thông tin (thành viên trong nhóm), theo dõi nhiều kênh học tập và thông báo môn học cùng lúc |
 | Câu nói đáng nhớ nhất (nguyên văn) | *"Thông báo thì giảng viên gửi qua Email trường, bài tập thì nộp trên LMS, còn lịch dời ca học hay dặn dò bài tập lớn thì trợ giảng lại nhắn vào nhóm Zalo; mỗi tối mở đủ 3 cái ứng dụng để check bài là hết cả buổi tối."* |
 | Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Đợt vừa rồi giảng viên gửi email thông báo thay đổi đề cương và dời hạn nộp bài tập lớn, nhưng vì hòm thư sinh viên nhận quá nhiều email thông báo tự động từ trường nên email quan trọng bị trôi mất, dẫn đến bị nộp trễ 1 ngày. |
 | Hiện đang xử lý bằng cách nào (workaround)? | Dùng một cuốn sổ tay nhỏ đặt trên bàn học để tự ghi lại danh sách deadline đầu tuần; tuy nhiên giữa tuần giảng viên đổi lịch đột xuất là sổ tay bị sai lệch ngay. |
 | Mất bao lâu, bao lần? | Đầu mỗi tuần mất khoảng 30–40 phút ngồi gom bài; mỗi buổi tối mất thêm 15–20 phút kiểm tra lại các kênh; kỳ trước từng bị trễ 1 bài tập quan trọng. |
 | Insight / opportunity rút ra | Thông tin quan trọng thường bị "chôn vùi" trong biển thông báo; giải pháp cần có tính năng **bóc tách chính xác nội dung chứa bài tập/hạn chót** thay vì bắt sinh viên phải tự đọc và lọc thủ công hàng chục thông báo mỗi ngày. |
 
-#### Interview Snapshot #3 — Trải nghiệm từ Phạm Lê Chuẩn
+#### Interview Snapshot #3 — Thành viên C (trong nhóm)
 
 | Trường | Nội dung |
 |---|---|
-| Người được hỏi (vai trò, không ghi tên thật) | Sinh viên năm 2 ngành Kỹ thuật Hệ thống / IT (Phạm Lê Chuẩn), thường xuyên làm bài tập kỹ thuật và đồ án nhóm |
+| Người được hỏi (vai trò, không ghi tên thật) | Sinh viên năm 2 ngành Kỹ thuật Hệ thống / IT (thành viên trong nhóm), thường xuyên làm bài tập kỹ thuật và đồ án nhóm |
 | Câu nói đáng nhớ nhất (nguyên văn) | *"Mình muốn có một công cụ nhìn vào là biết tối nay và ngày mai phải nộp bài gì ngay lập tức, chứ không muốn mất thời gian tự tay ngồi gõ từng đầu việc vào ứng dụng nhắc việc."* |
 | Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Thứ Sáu tuần trước, ngồi sửa lỗi code cho bài lab đến tận 1h sáng nên quên bẵng mất có một bài kiểm tra trắc nghiệm lý thuyết ngắn phải hoàn thành trước 23h59 trên LMS. |
 | Hiện đang xử lý bằng cách nào (workaround)? | Dùng ứng dụng nhắc việc trên điện thoại (Apple Reminders / Google Tasks) nhưng vì phải tự gõ tay từng bài nên nhiều hôm mệt mỏi quên không nhập, dẫn đến app không nhắc được. |
@@ -178,12 +140,13 @@ Giả định nhóm kiểm chứng trong buổi này: **Giả định #1, #2 và
 
 | Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác |
 |---|---:|---|---|
-| Phỏng vấn sâu (The Mom Test) | 3 (Minh, Huy, Chuẩn) | Cả 3/3 sinh viên xác nhận mất 15–25 phút mỗi tối để rà soát bài tập; việc bỏ sót deadline đều do thông báo bị phân mảnh ở nhiều kênh (LMS, Zalo, Teams, Email). | Chuẩn phản bác: Nếu giải pháp yêu cầu cấp mật khẩu hoặc quyền đọc toàn bộ tin nhắn Zalo cá nhân thì sẽ không dùng vì lo ngại an toàn dữ liệu riêng tư.<br>Minh & Huy phản bác: Nếu bot tự động gom quá nhiều thông báo rác (lời cảm ơn, chat chit trong nhóm lớp) thì sẽ làm ngập lụt thông báo và bị tắt chuông. |
+| Phỏng vấn sâu (The Mom Test) — thành viên trong nhóm | 3 (thành viên A, B, C) | Cả 3/3 sinh viên xác nhận mất 15–25 phút mỗi tối để rà soát bài tập; việc bỏ sót deadline đều do thông báo bị phân mảnh ở nhiều kênh (LMS, Zalo, Teams, Email). | Thành viên C phản bác: Nếu giải pháp yêu cầu cấp mật khẩu hoặc quyền đọc toàn bộ tin nhắn Zalo cá nhân thì sẽ không dùng vì lo ngại an toàn dữ liệu riêng tư.<br>Thành viên A và B phản bác: Nếu bot tự động gom quá nhiều thông báo rác (lời cảm ơn, chat chit trong nhóm lớp) thì sẽ làm ngập lụt thông báo và bị tắt chuông. |
+| Khảo sát trực tiếp (Phùng Văn Thanh Cao thực hiện) | 10 sinh viên ngoài nhóm | 8/10 sinh viên cho biết từng bị sót bài tập hoặc deadline | 2/10 sinh viên cho biết họ thường xuyên tự kiểm tra thông tin nên tránh được việc bỏ sót. Câu hỏi còn chung chung ("có hoàn thành hết bài tập hay bị sót phần nào không"), chưa hỏi lần gần nhất và nguyên nhân |
 | Micro survey trong lớp | 8 sinh viên lớp L3B | 7/8 sinh viên xác nhận phải theo dõi bài tập từ 3 nguồn trở lên; 6/8 người từng bị sót hoặc suýt trễ deadline ít nhất 1 lần trong tháng trước. | 1/8 sinh viên cho biết lớp họ giảng viên cam kết 100% chỉ dùng Canvas LMS nên chỉ cần xem LMS là đủ; 2/8 người đề nghị phải có chế độ tóm tắt ngắn gọn dưới 5 dòng mỗi tối thay vì gửi danh sách quá dài. |
 
 **Nhóm đã sửa problem thế nào sau kiểm chứng:**
-1. **Thu hẹp ranh giới (Boundary) và cách lấy dữ liệu:** Nhóm hủy bỏ ý tưởng "tự động đọc mọi tin nhắn từ Zalo cá nhân" (vướng rào cản bảo mật và quyền riêng tư theo phản bác của Chuẩn ở Giả định #5). Thay vào đó, nhóm chuyển sang mô hình lai: **Tự động đồng bộ bài tập chính thức từ LMS qua chuẩn iCal/RSS + Cho phép sinh viên chủ động forward/dán tin nhắn dặn dò vào bot để AI bóc tách ngày giờ hạn nộp.**
-2. **Cơ chế xác nhận con người (Human-in-the-loop):** Để tránh việc AI trích xuất nhầm hoặc làm phiền sinh viên (theo phản bác của Minh và Huy về ngập lụt thông báo), nhóm bổ sung bước: Hệ thống chỉ gửi **1 bản tin Daily Digest ngắn gọn vào lúc 22h00** tóm tắt các task sắp tới, sinh viên kiểm tra và bấm xác nhận trước khi lưu vào lịch cá nhân.
+1. **Thu hẹp ranh giới (Boundary) và cách lấy dữ liệu:** Nhóm hủy bỏ ý tưởng "tự động đọc mọi tin nhắn từ Zalo cá nhân" (vướng rào cản bảo mật và quyền riêng tư theo phản bác của thành viên C ở Giả định #5). Thay vào đó, nhóm chuyển sang mô hình lai: **Tự động đồng bộ bài tập chính thức từ LMS qua chuẩn iCal/RSS + Cho phép sinh viên chủ động forward/dán tin nhắn dặn dò vào bot để AI bóc tách ngày giờ hạn nộp.**
+2. **Cơ chế xác nhận con người (Human-in-the-loop):** Để tránh việc AI trích xuất nhầm hoặc làm phiền sinh viên (theo phản bác của thành viên A và B, cùng 2/8 sinh viên trong micro survey, về ngập lụt thông báo), nhóm bổ sung bước: Hệ thống chỉ gửi **1 bản tin Daily Digest ngắn gọn vào lúc 22h00** tóm tắt các task sắp tới, sinh viên kiểm tra và bấm xác nhận trước khi lưu vào lịch cá nhân.
 
 ### 3.3. Research giải pháp đã có
 
@@ -202,62 +165,64 @@ Giả định nhóm kiểm chứng trong buổi này: **Giả định #1, #2 và
 Sơ đồ (ASCII, Mermaid hoặc link ảnh trong `report/assets/`):
 
 ```text
-HIỆN TẠI — 6 bước, khoảng 45–50 phút thao tác cho một chu kỳ họp + theo dõi,
-6/6 bước thủ công (không tính thời gian họp và thời gian thực hiện task)
+HIỆN TẠI — 5 bước, ~18 phút/tối, 5/5 bước thủ công, lặp lại 4–5 tối/tuần
 
-[1 Đọc lại ghi chú/tin nhắn sau họp: 10']
-→ [2 Tách task, owner và deadline: 15'] ← BOTTLENECK
-→ [3 Gửi danh sách phân công vào nhóm chat: 5']
-→ [4 Thành viên báo trạng thái rải rác trong chat: không cố định]
-→ [5 Trưởng nhóm tìm và đối chiếu các cập nhật: 15']
-→ [6 Trưởng nhóm nhắn nhắc hoặc hỏi lại: 5']
+[1 Mở LMS xem bài mới: 3']
+→ [2 Kiểm tra email trường: 2']
+→ [3 Đọc các nhóm Zalo lớp/môn: 6'] ← BOTTLENECK
+→ [4 Xem Drive/tài liệu môn học: 3']
+→ [5 Ghi deadline vào sổ/ghi chú cá nhân: 4']
 ```
 
 | Bước | Actor | Input | Output | Thời gian / tần suất | Handoff / ghi chú |
 |---:|---|---|---|---|---|
-| 1 | Trưởng nhóm / người ghi chép | Ghi chú họp và lịch sử chat Zalo/Discord | Các đoạn chứa quyết định, task hoặc deadline | Khoảng 10 phút sau mỗi buổi họp | Chuyển các đoạn liên quan sang bước 2; có thể phải lướt lại nhiều tin nhắn |
-| 2 | Trưởng nhóm / người ghi chép | Các đoạn thông tin từ bước 1 | Danh sách task gồm nội dung, owner và deadline | Khoảng 15 phút sau mỗi buổi họp | **Bottleneck:** chuyển danh sách cho cả nhóm; dễ thiếu owner/deadline hoặc hiểu nhầm người thực hiện |
-| 3 | Trưởng nhóm | Danh sách task đã tổng hợp | Tin nhắn phân công trong nhóm chat | Khoảng 5 phút sau mỗi buổi họp | Handoff sang từng thành viên; danh sách có thể bị trôi khi xuất hiện tin nhắn mới |
-| 4 | Thành viên | Task được giao và kết quả đang thực hiện | Tin nhắn “đang làm/đã xong/bị chặn” | Không cố định trong tuần | Handoff ngược lại cho trưởng nhóm; cách báo trạng thái chưa thống nhất |
-| 5 | Trưởng nhóm | Lịch sử chat và các cập nhật từ thành viên | Bảng trạng thái tạm thời trong đầu/ghi chú riêng | Khoảng 15 phút cho mỗi lần kiểm tra tiến độ | Phải tìm và đối chiếu thủ công; dễ bỏ sót hoặc ghi nhận trùng |
-| 6 | Trưởng nhóm | Trạng thái đã đối chiếu và deadline | Tin nhắn nhắc việc hoặc câu hỏi xác nhận | Khoảng 5 phút cho mỗi lần kiểm tra | Handoff cho thành viên cần cập nhật; phụ thuộc vào trưởng nhóm chủ động nhắc |
+| 1 | Sinh viên | Trang LMS các môn đang học | Danh sách bài tập chính thức mới và hạn nộp | ~3 phút/tối, 4–5 tối/tuần | Thông tin có cấu trúc, ít khi sót; chuyển sang bước 5 để ghi lại |
+| 2 | Sinh viên | Hộp thư email trường | Thông báo của giảng viên: đổi đề cương, dời hạn | ~2 phút/tối | Email quan trọng dễ bị chìm giữa email tự động của trường (CP4, snapshot #2) |
+| 3 | Sinh viên | Các nhóm Zalo lớp/môn | Tin dặn dò bài tập, tin đổi hạn hoặc nộp sớm | ~6 phút/tối | **Bottleneck:** thông báo lẫn trong tin trò chuyện, viết dạng tự do, dễ trôi; đây là nguồn chính của các lần sót (CP4, giả định #2) |
+| 4 | Sinh viên | Drive/tài liệu môn học | Đề bài, rubric, yêu cầu nộp | ~3 phút/tối | Thường phải mở sau khi thấy nhắc trong Zalo hoặc email |
+| 5 | Sinh viên | Kết quả bước 1–4 | Danh sách deadline trong sổ/ghi chú | ~4 phút/tối | Không có handoff; nếu giữa tuần đổi hạn thì danh sách bị sai mà không ai báo |
 
-**Bottleneck chính:** Bước 2 — chuyển nội dung họp/chat không có cấu trúc thành danh sách task có đủ nội dung, owner và deadline. Bằng chứng hiện có trong báo cáo cá nhân ghi nhận mất 25–30 phút sau một buổi họp để đọc lại và tổng hợp action item; đã có một task bị trễ vì hai thành viên hiểu nhầm người thực hiện. Khi cần tìm lại quyết định/tài liệu cũ, một thành viên còn mất 15–20 phút/lần, khoảng 3–4 lần/tuần. CP4 cần xác nhận các tín hiệu này với người dùng ngoài nhóm.
+**Bottleneck chính:** Bước 3, đọc các nhóm Zalo (~6 phút/tối). Thông báo bài tập và tin đổi hạn bị lẫn trong tin trò chuyện, viết bằng ngôn ngữ tự do, nên dễ trôi và dễ sót. CP4 xác nhận phần lớn các lần sót đến từ kênh chat và email, không phải từ LMS (giả định #2; snapshot #1, #2). Số phút từng bước là ước tính từ trải nghiệm của người đề xuất (Problem Card #1), khớp với khoảng 15–25 phút/tối ghi nhận ở CP4.
 
 ### 4.2. Quy trình tương lai
 
 Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người**, **boundary** ở đâu, **phương án quay về** khi AI sai.
 
 ```text
-TƯƠNG LAI — 5 bước, mục tiêu dưới 10 phút thao tác sau mỗi buổi họp,
-3/5 bước có thao tác thủ công
+TƯƠNG LAI — 6 bước, mục tiêu dưới 5 phút thao tác mỗi tối,
+2/6 bước có thao tác của sinh viên
 
-[1 Người ghi chép chọn ghi chú/đoạn chat được phép dùng: 2'] ← CON NGƯỜI
-→ [2 Kiểm tra đủ trường task–owner–deadline: <1']           ← RULE
-→ [3 Trích xuất action item thành bản nháp: 1']              ← AI
-→ [4 Trưởng nhóm đối chiếu nguồn, sửa và xác nhận: 5']       ← CON NGƯỜI
-→ [5 Xác nhận cập nhật bảng task; gửi/nhắc theo hạn: 1']      ← CON NGƯỜI + RULE
+[1 Đồng bộ bài tập LMS sang Google Calendar qua iCal feed: tự động]      ← RULE
+→ [2 Sinh viên chọn và dán/forward tin dặn dò Zalo, email trong ngày: 1–2'] ← CON NGƯỜI
+→ [3 Trích "môn – bài – hạn – loại (mới/đổi hạn) – câu nguồn": < 1']      ← AI
+→ [4 Gộp trùng với lịch LMS, đánh dấu đổi hạn, tạo Daily Digest 22h ≤ 5 dòng: tự động] ← RULE
+→ [5 Sinh viên duyệt digest, sửa nếu cần, bấm xác nhận: ~2']             ← CON NGƯỜI (HITL)
+→ [6 Lưu mục đã xác nhận vào lịch; nhắc trước hạn 24 giờ: tự động]       ← RULE
 
 BOUNDARY:
-- AI chỉ xử lý ghi chú hoặc đoạn chat được thành viên chủ động cung cấp; không tự đọc chat riêng.
-- Nếu nguồn không nêu owner hoặc deadline, AI phải đánh dấu “thiếu thông tin”, không tự suy đoán.
-- AI không tự giao việc, đổi deadline, đánh dấu hoàn thành hoặc gửi thông báo cho cả nhóm.
-- Trưởng nhóm phải đối chiếu từng task, owner và deadline với nội dung nguồn trước khi xác nhận.
+- AI chỉ xử lý văn bản do sinh viên chủ động dán hoặc forward; không đăng nhập,
+  không đọc tài khoản Zalo, email hay LMS.
+- Dữ liệu LMS đi qua iCal (Rule), không qua AI.
+- Nguồn không nêu rõ môn hoặc hạn thì AI ghi "thiếu thông tin", không tự suy đoán.
+- Hạn trên LMS khác hạn trong tin nhắn thì hiện cả hai, sinh viên quyết định.
+- AI không tự tạo, sửa, xóa lịch và không tự gửi nhắc; chỉ mục sinh viên đã xác nhận
+  mới vào lịch.
 
 PHƯƠNG ÁN QUAY VỀ:
-- Nếu AI trích xuất thiếu/sai hoặc không hoạt động, trưởng nhóm bỏ bản nháp AI và điền thủ công
-  template task–owner–deadline–status. Rule nhắc hạn vẫn chạy trên dữ liệu đã được xác nhận.
+- AI trích sai, thiếu hoặc không hoạt động → sinh viên bỏ bản nháp, quay về checklist
+  4 nguồn thủ công (bước 2–5 của quy trình hiện tại). Lịch LMS từ iCal và Rule nhắc hạn
+  vẫn chạy bình thường vì không phụ thuộc AI.
 ```
 
 ### 4.3. Before / after
 
 | Chỉ số | Trước | Sau (kỳ vọng) | Ghi chú |
 |---|---:|---:|---|
-| Số bước | 6 | 5 | Gộp việc tìm/chép lại thành một bản nháp có cấu trúc |
-| Tổng thời gian thao tác | Khoảng 45–50 phút cho một chu kỳ họp + kiểm tra tiến độ | Dưới 10 phút sau họp; việc nhắc hạn chạy từ dữ liệu đã xác nhận | Baseline 45–50 phút là tổng ước lượng từ các bước; CP4 cần kiểm chứng |
-| Số bước thủ công | 6/6 | 3/5 | Trưởng nhóm vẫn chọn nguồn, duyệt và xác nhận cập nhật |
-| Bottleneck chính | Tách task/owner/deadline và tìm lại cập nhật trong chat | Trưởng nhóm kiểm tra và sửa bản nháp | Điểm kiểm tra của con người được giữ để bảo đảm chất lượng |
-| Rủi ro mới phát sinh | — | AI bỏ sót task, gán nhầm owner/deadline; lộ nội dung chat | Xử lý bằng boundary, HITL và phương án quay về |
+| Số bước | 5 | 6 | Thêm bước tự động (Rule) nhưng giảm thao tác tay |
+| Tổng thời gian thao tác | ~18 phút/tối | Dưới 5 phút/tối | Chỉ còn bước dán tin (1–2') và duyệt digest (~2') |
+| Số bước thủ công | 5/5 | 2/6 | Sinh viên vẫn chọn nguồn và xác nhận cuối cùng |
+| Bottleneck chính | Đọc nhóm Zalo, dễ sót tin đổi hạn | Sinh viên duyệt digest | Điểm kiểm tra của con người được giữ để bảo đảm không sót |
+| Rủi ro mới phát sinh | — | AI trích sai hạn hoặc bỏ sót tin đổi hạn; sinh viên quên dán tin; digest dài gây ngập thông báo; lộ nội dung chat của lớp | Xử lý bằng boundary, HITL ở bước 5, giới hạn digest ≤ 5 dòng và phương án quay về |
 
 ---
 
@@ -265,56 +230,74 @@ PHƯƠNG ÁN QUAY VỀ:
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | Sinh viên làm bài tập/dự án theo nhóm, đặc biệt là trưởng nhóm hoặc người chịu trách nhiệm theo dõi tiến độ |
-| **Quy trình** | Sau buổi họp hoặc khi có task mới, nhóm phải đọc lại ghi chú/tin nhắn, tách action item, xác định người phụ trách và deadline, gửi lại phân công, nhận cập nhật trạng thái rồi nhắc các task sắp hoặc đã trễ hạn |
-| **Bottleneck** | Chuyển nội dung thảo luận rải rác thành danh sách task có đủ nội dung, owner và deadline; riêng bước đọc lại và tổng hợp hiện mất khoảng 25–30 phút sau mỗi buổi họp và vẫn có nguy cơ hiểu nhầm hoặc bỏ sót |
-| **Impact** | Trưởng nhóm mất thời gian tổng hợp và nhắc thủ công; thông tin bị trôi trong chat có thể làm hai người hiểu nhầm phân công, trùng việc hoặc để task trễ, ảnh hưởng tiến độ và kết quả chung |
-| **Success Metric** (baseline → target, cách đo) | Thời gian tổng hợp action item sau họp từ 25–30 phút xuống dưới 10 phút, đồng thời 100% task trong nội dung nguồn có đủ task/owner/deadline hoặc được đánh dấu “thiếu thông tin”. Đo bằng cách trưởng nhóm bấm giờ từ lúc bắt đầu đọc lại nội dung đến lúc gửi danh sách đã xác nhận trong 4 buổi họp liên tiếp, rồi đối chiếu danh sách với ghi chú/chat nguồn. Baseline/target phải được cập nhật nếu CP4 cho bằng chứng khác. |
-| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | AI không tự truy cập chat riêng, tự giao việc, đổi owner/deadline, đánh dấu task hoàn thành hoặc tự gửi thông báo. Trưởng nhóm phải đối chiếu mọi task, owner và deadline với nội dung nguồn và xác nhận trước khi cập nhật bảng chung hoặc gửi cho thành viên. |
+| **Actor** | Sinh viên phải theo dõi bài tập và deadline từ nhiều kênh (LMS, email trường, nhóm Zalo lớp/môn, Drive) |
+| **Quy trình** | Mỗi tối, sinh viên lần lượt mở LMS, kiểm tra email trường, đọc các nhóm Zalo, xem Drive tài liệu, rồi tự ghi deadline vào sổ/ghi chú cá nhân |
+| **Bottleneck** | Bước đọc các nhóm Zalo (~6 phút/tối): thông báo bài tập và tin đổi hạn bị lẫn trong tin trò chuyện, viết dạng tự do, dễ trôi và dễ sót |
+| **Impact** | ~18 phút/tối ≈ 1,8 giờ/tuần; sót ~1 deadline/tháng và bị trừ điểm. CP4: 8/10 sinh viên ngoài nhóm từng bị sót bài tập; 6/8 sinh viên trong micro survey từng sót hoặc suýt trễ deadline trong tháng trước |
+| **Success Metric** (baseline → target, cách đo) | Thời gian rà soát bài tập mỗi tối từ ~18 phút xuống dưới 5 phút; số deadline bị sót từ ~1/tháng xuống 0 trong 4 tuần. Đo bằng cách sinh viên tự bấm giờ mỗi tối và ghi số deadline bị sót (đối chiếu với LMS và thông báo gốc) trong 4 tuần |
+| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | AI không đăng nhập hay đọc tài khoản Zalo, email cá nhân; không tự tạo lịch và không tự gửi nhắc. Sinh viên phải xác nhận từng deadline trước khi lưu vào lịch |
 
 Phản biện nhận được (từ AI hoặc nhóm khác) và nhóm có đồng ý không:
 
-- **Phản biện từ AI:** Metric ban đầu trộn hai pain khác nhau — “tổng hợp action item sau họp” và “theo dõi tiến độ trong tuần” — nên khó biết cải thiện đến từ bước nào. Baseline cũng mới dựa trên trải nghiệm của một thành viên.
-- **Trạng thái nhóm cần xác nhận:** Đồng ý hay không với việc thu hẹp metric chính vào thời gian tổng hợp action item sau họp; sau CP4, thay dòng này bằng quyết định thật của nhóm và số liệu đã được kiểm chứng.
+- **Phản biện từ AI (Claude):** Metric chỉ đo thời gian và số lần sót, chưa đo chất lượng đầu ra của bước trích xuất. Nhanh hơn mà phải sửa nhiều thì không đạt. → **Đồng ý**, bổ sung metric "≤ 10% mục phải sửa" ở v1.
+- **Phản biện từ AI (Claude):** Actor "sinh viên" quá rộng. CP4 có 1/8 sinh viên chỉ cần xem LMS là đủ, nên không gặp pain này. → **Đồng ý**, v1 thu hẹp actor về sinh viên học 4–6 môn/kỳ, theo dõi từ 3 kênh trở lên.
+- **Phản biện từ AI (Claude):** Boundary chưa nói AI xử lý gì khi nguồn thiếu thông tin hoặc khi hạn trên LMS mâu thuẫn với tin nhắn. → **Đồng ý**, bổ sung ở v1: không suy đoán, hiện cả hai hạn.
+- **Phản biện từ AI (Claude):** Baseline 18 phút là ước tính của một người. → **Đồng ý một phần**: giữ 18 phút làm baseline vì nằm trong khoảng 15–25 phút ghi nhận ở CP4, nhưng sẽ đo lại thật trong pilot.
 
 ---
+
 
 ## 6. Mức can thiệp AI (CP6)
 
 ### 6.1. Ma trận độ mơ hồ × độ phức tạp
 
-Bài của nhóm nằm ở ô:
+Bài của nhóm nằm ở ô: **Độ phức tạp cao × Độ mơ hồ thấp** → *Workflow nhiều bước rõ ràng, chưa chắc cần Agent*.
 
 Vì sao:
+
+- **Độ phức tạp cao:** thông tin bài tập nằm ở **4 nguồn** (LMS, email trường, nhóm Zalo lớp/môn, Drive tài liệu). Quy trình có nhiều bước nối tiếp: lấy dữ liệu → trích deadline → so với lịch LMS để phát hiện trùng hoặc đổi hạn → tổng hợp → sinh viên xác nhận. Bước sau phụ thuộc kết quả bước trước.
+- **Độ mơ hồ thấp ở đầu ra:** một deadline trích ra hoặc **đúng, hoặc sai** (đúng môn, đúng bài, đúng ngày giờ), kiểm tra được bằng cách đối chiếu câu nguồn. Không có kiểu "nhiều đáp án đều chấp nhận được" như viết narrative.
+- **Phần khó nằm ở đầu vào:** tin nhắn Zalo và email dặn dò viết bằng tiếng Việt tự do ("thứ 6 tuần sau nộp nhé", "dời sang CN", "bài lab 3 nộp sớm sáng thứ 7"). Đây là lý do cần AI ở **đúng một bước** trích xuất. Còn các bước khác cố định, nên chỉ cần Workflow, không cần Agent.
 
 ### 6.2. So sánh 4 mức
 
 | Mức | Phương án cho bài của nhóm | Đủ khi nào | Rủi ro | Chọn? |
 |---|---|---|---|---|
-| **No AI** (sửa quy trình) | | | | |
-| **Rule** | | | | |
-| **Workflow** | | | | |
-| **Agent** | | | | |
+| **No AI** (sửa quy trình) | Lớp trưởng ghim mọi thông báo bài tập; Google Sheet deadline chung của lớp; bật thông báo LMS; sinh viên dùng checklist kiểm tra 4 nguồn mỗi tối | Khi lớp có người cập nhật Sheet đều đặn, hoặc giảng viên chỉ dùng LMS (1/8 sinh viên trong micro survey ở CP4 thuộc trường hợp này) | Phụ thuộc lớp trưởng; tin dặn dò và đổi hạn trong Zalo vẫn trôi; sinh viên vẫn mất ~18 phút/tối | Không làm giải pháp chính; **dùng làm phương án quay về** |
+| **Rule** | Đồng bộ bài tập LMS sang Google Calendar qua iCal feed (mục 3.3); lọc email theo người gửi là giảng viên/trợ giảng và từ khóa "hạn nộp", "deadline"; nhắc tự động trước hạn 24 giờ | Khi deadline nằm ở nguồn có cấu trúc (LMS, email có tiêu đề rõ) | Không bóc tách được tin nhắn Zalo viết tự do; lọc từ khóa bỏ sót các câu như "nộp sớm sáng thứ 7" | **Có**, cho bước 1 (LMS) và bước 4 (gộp, nhắc hạn) |
+| **Workflow** | Các bước cố định: Rule lấy lịch LMS → sinh viên dán/forward tin nhắn, email dặn dò → **AI trích "môn – bài – hạn – loại (mới / đổi hạn) – câu nguồn"** → Rule so với lịch LMS để gộp trùng, đánh dấu đổi hạn và tạo Daily Digest 22h (≤ 5 dòng) → sinh viên duyệt, bấm xác nhận rồi mới lưu vào lịch | Khi AI trích đúng phần lớn deadline và sinh viên duyệt xong trong 2–3 phút | AI trích sai ngày hoặc bỏ sót tin đổi hạn; digest quá dài gây ngập thông báo; sinh viên quên dán tin nhắn | **✅ Chọn** |
+| **Agent** | AI tự đăng nhập LMS, email, Zalo; tự đọc mọi nhóm chat; tự tạo, sửa lịch và tự nhắc | Không cần cho bài này | Cần mật khẩu hoặc quyền đọc toàn bộ Zalo cá nhân, điều sinh viên đã phản bác ở CP4 (giả định #5); AI tự tạo lịch sai thì sinh viên bỏ sót mà không biết | ❌ Không chọn |
 
-**Mức chọn:**
+**Mức chọn:** **Workflow**, AI chỉ làm 1 bước (trích deadline từ tin nhắn/email dạng văn bản tự do), kết hợp **Rule** cho phần LMS, gộp trùng và nhắc hạn.
 
 **Vì sao không chọn mức đơn giản hơn:**
+
+- **Rule không đủ:** iCal chỉ lấy được bài tập chính thức trên LMS. Theo giả định #2 ở CP4, phần lớn các lần sót lại đến từ **thông báo không có cấu trúc** trong Zalo và email. Bottleneck trong Card #1 cũng là bước đọc Zalo (6 phút/tối, dễ sót tin đổi hạn). Từ khóa cố định không bắt được các cách viết tự do này.
+- **No AI không đủ:** checklist và Sheet chung vẫn để sinh viên tự đọc từng nguồn mỗi tối. Đây đúng là việc đang làm, mất ~18 phút/tối, mà 8/10 sinh viên được hỏi vẫn từng bị sót bài.
+- **Phần nào Rule làm được thì không dùng AI:** toàn bộ dữ liệu LMS đi qua iCal, không qua AI, theo bài học từ research Canvas iCal ở mục 3.3.
+
+**Vì sao không chọn Agent:** các bước đã biết trước và cố định, không có bước nào cần AI tự quyết làm gì tiếp. Agent còn đòi quyền truy cập tài khoản cá nhân, điều sinh viên đã phản bác ở CP4.
 
 ### 6.3. AI Canvas rút gọn
 
 | Thành phần | Nội dung |
 |---|---|
-| **Prediction** — AI dự đoán / tạo ra gì? | |
-| **Judgment** — con người cân nhắc, quyết định gì? | |
-| **Action** — hành động cuối cùng là gì, ai làm? | |
-| **Outcome** — đo kết quả bằng gì? | |
-| **Input** — AI cần dữ liệu đầu vào gì mỗi lần chạy? Có sẵn không? | |
-| **Feedback** — lấy phản hồi ở đâu để cải thiện? | |
+| **Prediction** — AI dự đoán / tạo ra gì? | Từ đoạn tin nhắn hoặc email sinh viên dán vào, tạo danh sách: **môn – bài – hạn (ngày, giờ) – loại (mới / đổi hạn) – câu nguồn trích nguyên văn**. Không xác định được môn hoặc hạn thì ghi "thiếu thông tin" |
+| **Judgment** — con người cân nhắc, quyết định gì? | Sinh viên quyết định: mục nào đúng, có đúng là bài của lớp/nhóm mình không, và khi hạn trên LMS khác hạn trong Zalo thì tin theo hạn nào (có thể hỏi lại giảng viên/trợ giảng) |
+| **Action** — hành động cuối cùng là gì, ai làm? | Sinh viên bấm xác nhận từng mục, mục đã xác nhận mới được lưu vào lịch cá nhân. Rule nhắc trước hạn 24 giờ. AI không tự tạo, sửa hay xóa lịch |
+| **Outcome** — đo kết quả bằng gì? | (1) Thời gian rà soát mỗi tối (baseline ~18 phút); (2) số deadline bị sót mỗi tháng (baseline ~1); (3) tỉ lệ mục trong digest sinh viên phải sửa |
+| **Input** — AI cần dữ liệu đầu vào gì mỗi lần chạy? Có sẵn không? | (1) Văn bản tin nhắn Zalo/email do sinh viên **tự chọn và dán vào**: có sẵn, nhưng sinh viên phải thao tác vì Zalo hạn chế API cho tài khoản cá nhân (mục 3.3); (2) **ngày gửi tin**, để quy đổi "thứ 6 tuần sau" ra ngày cụ thể: có sẵn; (3) **danh sách môn đang học**: có sẵn; (4) **lịch LMS từ iCal**, để gộp trùng và phát hiện đổi hạn: có sẵn. Chưa hỗ trợ: ảnh chụp màn hình, slide (ngoài phạm vi) |
+| **Feedback** — lấy phản hồi ở đâu để cải thiện? | Các mục sinh viên sửa, xóa hoặc tự thêm khi duyệt digest; các deadline bị sót phát hiện sau đó (ghi lại tin nguồn). Mỗi tuần dùng các lỗi lặp lại để chỉnh hướng dẫn (prompt) và danh sách từ khóa của Rule |
 
 ### 6.4. Hai câu hỏi của Google PAIR
 
 - Người dùng muốn **được hỗ trợ (augment)** hay **giao hẳn việc (automate)**? Bằng chứng:
+  - **Augment**, nhưng giảm tối đa thao tác. Sinh viên **không muốn giao hẳn**: ở CP4 có ý kiến phản bác việc cấp quyền đọc toàn bộ Zalo cá nhân, và 2/8 sinh viên muốn bản tóm tắt dưới 5 dòng để tự xem. Họ cũng **không muốn tự gõ tay** từng bài (workaround hiện tại là chụp màn hình hoặc tự ghi sổ, rồi bị sai khi đổi hạn).
+  - Vì vậy thiết kế để AI làm phần đọc và trích, còn sinh viên giữ quyền xác nhận trong 2–3 phút mỗi tối. Giả định "sinh viên chịu duyệt 2–3 phút mỗi tối" (giả định #3, bằng chứng 3/5) cần được đo trong pilot.
 - AI sai kiểu nào tệ hơn, **báo nhầm** hay **bỏ sót**? Vì sao, và thiết kế đã xử lý thế nào:
+  - **Bỏ sót tệ hơn.** Một deadline hay một tin đổi hạn bị bỏ sót nghĩa là sinh viên nộp trễ hoặc mất điểm, đúng là pain gốc. Báo nhầm thì sinh viên thấy ngay khi duyệt và xóa được.
+  - **Nhưng báo nhầm quá nhiều cũng nguy hiểm.** Ở CP4, sinh viên phản bác rằng digest ngập tin rác thì họ sẽ tắt thông báo, và khi đó lại dẫn tới bỏ sót.
+  - **Thiết kế:** AI phải liệt kê cả mục chưa chắc (nhãn "cần xác nhận") thay vì tự bỏ. Mọi tin đổi hạn hiện cả hạn cũ (LMS) và hạn mới. Rule gộp trùng với lịch LMS, và digest giới hạn ≤ 5 dòng, chỉ gồm deadline trong 7 ngày tới.
 
 ---
 
@@ -322,29 +305,35 @@ Vì sao:
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | |
-| **Quy trình** | |
-| **Bottleneck** | |
-| **Impact** | |
-| **Success Metric** (baseline → target, cách đo) | |
-| **Boundary** | |
-| **AI intervention point** | |
-| **Mức chọn** | No AI / Rule / Workflow / Agent |
-| **Rủi ro & người kiểm tra** | |
+| **Actor** | Sinh viên học 4–6 môn/kỳ, phải theo dõi bài tập từ ít nhất 3 kênh (LMS, email trường, nhóm Zalo lớp/môn, Drive) |
+| **Quy trình** | Mỗi tối: mở LMS xem bài mới (3') → kiểm tra email trường (2') → đọc các nhóm Zalo lớp/môn (6') → xem Drive/tài liệu (3') → ghi deadline vào sổ/ghi chú (4'); khoảng 18 phút/tối, 5/5 bước thủ công |
+| **Bottleneck** | Bước đọc nhóm Zalo (~6 phút/tối): thông báo bài tập và tin đổi hạn bị lẫn trong tin trò chuyện, viết dạng tự do, dễ trôi và dễ sót |
+| **Impact** | ~18 phút/tối ≈ 1,8 giờ/tuần cho mỗi sinh viên; sót ~1 deadline/tháng và bị trừ điểm. Kiểm chứng: 8/10 sinh viên ngoài nhóm từng bị sót bài tập; 6/8 sinh viên trong micro survey từng sót hoặc suýt trễ deadline trong tháng trước; 7/8 phải theo dõi từ 3 nguồn trở lên |
+| **Success Metric** (baseline → target, cách đo) | **Thời gian:** rà soát bài tập mỗi tối từ ~18 phút xuống dưới 5 phút. **Kết quả:** số deadline bị sót từ ~1/tháng xuống 0 trong 4 tuần. **Chất lượng:** không quá 10% mục trong digest phải sửa. **Cách đo:** 3–5 sinh viên pilot tự bấm giờ mỗi tối và ghi vào bảng theo dõi; cuối mỗi tuần đối chiếu danh sách đã xác nhận với LMS và thông báo gốc để đếm deadline bị sót và số mục phải sửa |
+| **Boundary** | AI chỉ xử lý văn bản do sinh viên **chủ động dán hoặc forward**; không đăng nhập, không đọc tài khoản Zalo, email hay LMS. AI không tự tạo, sửa, xóa lịch và không tự gửi nhắc. Khi nguồn không rõ môn hoặc hạn thì ghi "thiếu thông tin", không suy đoán. Khi hạn LMS và hạn trong tin nhắn khác nhau thì hiện cả hai, để sinh viên quyết định. Sinh viên xác nhận từng mục trước khi lưu vào lịch (HITL) |
+| **AI intervention point** | Duy nhất bước trích deadline từ tin nhắn/email dạng văn bản tự do. Phần LMS do Rule (iCal) xử lý, không qua AI |
+| **Mức chọn** | **Workflow** (AI ở 1 bước) + **Rule** (iCal LMS, gộp trùng, nhắc hạn 24 giờ) |
+| **Rủi ro & người kiểm tra** | **Rủi ro:** AI bỏ sót hoặc trích sai hạn, nhất là tin đổi hạn; sinh viên quên dán tin nhắn; lộ nội dung chat của lớp khi dán vào dịch vụ AI. **Người kiểm tra:** chính sinh viên khi duyệt digest 22h, đối chiếu câu nguồn. **Khi AI sai hoặc không dùng được:** quay về checklist 4 nguồn thủ công; lịch LMS từ iCal vẫn chạy bình thường |
 
 **Thay đổi so với v0 và lý do:**
 
 | Trường | v0 | v1 | Vì sao đổi |
 |---|---|---|---|
-| | | | |
+| Actor | Sinh viên phải theo dõi bài tập từ nhiều kênh | Sinh viên học 4–6 môn/kỳ, theo dõi từ ít nhất 3 kênh | Phản biện v0: actor quá rộng; CP4 có 1/8 sinh viên chỉ cần xem LMS nên không gặp pain này |
+| Success Metric | Thời gian 18 → < 5 phút/tối; deadline bị sót ~1/tháng → 0 trong 4 tuần | Thêm metric chất lượng: ≤ 10% mục trong digest phải sửa; cách đo cụ thể với 3–5 sinh viên pilot | Phản biện v0: nhanh hơn mà phải sửa nhiều thì không đạt; cần đo chất lượng đầu ra của AI |
+| Boundary | AI không đọc tài khoản Zalo/email; không tự tạo lịch, không tự gửi nhắc; sinh viên xác nhận trước khi lưu | Thêm: AI chỉ xử lý văn bản sinh viên tự dán; nguồn thiếu thông tin thì không suy đoán; hạn LMS và hạn trong tin nhắn khác nhau thì hiện cả hai | PAIR (6.4): bỏ sót và đoán sai hạn là kiểu sai tệ nhất; tiêu chí eval #3, #4 cần boundary này |
+| AI intervention point | (chưa có) | Chỉ bước trích deadline từ tin nhắn/email tự do; LMS đi qua Rule (iCal) | So sánh 4 mức (6.2) và research Canvas iCal (3.3): phần LMS có cấu trúc, Rule chính xác hơn và không tốn chi phí |
+| Mức chọn, Rủi ro & người kiểm tra | (chưa có) | Workflow + Rule; sinh viên kiểm tra khi duyệt digest; quay về checklist 4 nguồn khi AI sai | Kết quả phân tích CP6 |
 
 **Tiêu chí đánh giá đầu ra của AI (3–5 tiêu chí):**
 
 | # | Tiêu chí | Đạt khi | Không đạt khi |
 |---:|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
+| 1 | Không bỏ sót | Mọi bài tập/deadline có trong đoạn tin nhắn dán vào đều xuất hiện trong danh sách (kể cả dưới nhãn "cần xác nhận") | Có ít nhất 1 deadline trong nguồn không xuất hiện trong danh sách |
+| 2 | Đúng hạn | Ngày giờ khớp nguồn; cách nói tương đối được quy đổi đúng theo ngày gửi tin ("thứ 6 tuần sau" → đúng ngày) | Sai ngày/giờ, quy đổi sai, hoặc AI tự đặt hạn |
+| 3 | Phát hiện đổi hạn | Tin đổi hạn được gắn nhãn "đổi hạn" và hiện cả hạn cũ (LMS) lẫn hạn mới | Tin đổi hạn bị coi là bài mới, hoặc ghi đè hạn cũ mà không báo |
+| 4 | Không bịa, có nguồn | Mỗi mục kèm câu nguồn trích nguyên văn; nguồn thiếu môn hoặc hạn thì ghi "thiếu thông tin" | Có mục không truy được về câu nguồn, hoặc AI tự điền thông tin không có trong nguồn |
+| 5 | Digest gọn | Tối đa 5 dòng, chỉ gồm deadline trong 7 ngày tới, không chứa tin trò chuyện | Quá 5 dòng, lặp mục đã có trong LMS, hoặc lẫn tin không phải bài tập |
 
 ---
 
@@ -354,31 +343,60 @@ Vì sao:
 
 | Rủi ro | Câu hỏi | Mức độ rủi ro (Thấp = an toàn / TB / Cao = nguy hiểm) | Lý do / bằng chứng |
 |---|---|---|---|
-| **Value** | Người dùng có thật sự cần và sẽ dùng không? | | |
-| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | | |
-| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | | |
-| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | | |
+| **Value** | Người dùng có thật sự cần và sẽ dùng không? | **TB** | Pain có bằng chứng từ người thật: 8/10 sinh viên ngoài nhóm từng bị sót bài tập; 6/8 trong micro survey từng sót hoặc suýt trễ trong tháng trước; 7/8 theo dõi từ 3 nguồn trở lên. Vẫn để TB vì câu hỏi khảo sát còn chung chung ("có bị sót không"), chưa đo thời gian của người ngoài nhóm, và có tín hiệu phản bác (1/8 chỉ cần xem LMS; 2/10 tự kiểm tra thường xuyên nên ít bị sót) |
+| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | **TB** | Đầu ra ngắn, có câu nguồn nên dễ đối chiếu và sửa. Nhưng sinh viên phải tự dán tin nhắn; CP4 cho thấy sinh viên ngại nhập tay và hay quên khi mệt. Giả định "chịu duyệt 2–3 phút mỗi tối" chưa được đo |
+| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | **Thấp** | iCal feed LMS có sẵn (mục 3.3); trích deadline từ văn bản bằng trợ lý AI phổ thông là pattern đã có (n8n, mục 3.3); Google Calendar/Sheet miễn phí. Không cần lập trình phức tạp cho pilot. Zalo hạn chế API nên dùng cách dán thủ công |
+| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | **TB** | Chi phí gần như 0 (gói miễn phí). Không truy cập tài khoản cá nhân. Tuy vậy, tin nhắn nhóm lớp có nội dung của người khác, nên chỉ dán phần thông báo bài tập, không dán thông tin cá nhân. Mỗi sinh viên tự vận hành cho mình, không cần trường hay lớp duy trì |
 
 ### 8.2. Kết luận
 
-**Quyết định:** Go / Not Yet / No-Go
+**Quyết định:** **Go (phạm vi nhỏ)**
 
-**Lý do:**
+**Lý do:** Không có rủi ro nào ở mức Cao. Value đã có bằng chứng từ 18 sinh viên (10 + 8). Feasibility thấp vì dùng công cụ có sẵn. Usability và Viability ở mức TB, đã có biện pháp: boundary, HITL qua digest, phương án quay về. Vì vậy nhóm **không tự xây ứng dụng** mà pilot bằng công cụ có sẵn trong một quy trình bán thủ công.
 
-**Nếu Go — pilot nhỏ nhất:**
+**Nếu Go — pilot nhỏ nhất:** 3–5 sinh viên trong 1 lớp, 2 tuần. (1) Đăng ký iCal feed LMS vào Google Calendar. (2) Mỗi tối, sinh viên dán các tin nhắn/email dặn dò trong ngày vào trợ lý AI với một prompt cố định, nhận danh sách theo đúng 5 tiêu chí ở mục 7. (3) Sinh viên duyệt, rồi tự thêm các mục đã xác nhận vào Calendar. (4) Ghi thời gian, số mục phải sửa và số deadline bị sót vào bảng theo dõi.
 
-**Nếu Not Yet — cần kiểm chứng gì trước:**
+**Nếu Not Yet — cần kiểm chứng gì trước:** Không áp dụng. Song song với pilot, nhóm vẫn phỏng vấn thêm 2–3 sinh viên ngoài nhóm theo The Mom Test ("lần gần nhất bạn sót bài là khi nào, vì sao, đang xử lý thế nào") để củng cố bằng chứng Value.
 
-**Nếu No-Go — nên làm gì thay AI:**
+**Nếu No-Go — nên làm gì thay AI:** Không áp dụng. Nếu chạm ngưỡng dừng, dùng phương án No AI + Rule: iCal LMS + Google Sheet deadline chung của lớp do lớp trưởng cập nhật + nhắc hạn tự động.
 
 **Ngưỡng dừng** (nếu sau … mà … thì quay về …):
+
+Nếu sau **2 tuần pilot** xảy ra **một trong các điều sau**, nhóm dừng bước AI và quay về **iCal LMS + Google Sheet deadline chung của lớp + checklist 4 nguồn** (No AI + Rule):
+
+- thời gian rà soát vẫn **≥ 10 phút/tối**;
+- có **≥ 1 deadline bị sót** do AI trích thiếu mà sinh viên không phát hiện khi duyệt;
+- sinh viên phải sửa **> 30% mục** trong danh sách;
+- **quá một nửa** sinh viên pilot bỏ bước dán tin nhắn từ tuần thứ 2.
 
 ---
 
 ## 9. Hạn chế và hướng tiếp theo
 
--
+**Hạn chế:**
+
+- **Phỏng vấn sâu mới thực hiện với thành viên trong nhóm.** 3 snapshot ở CP4 là thành viên nhóm, không đúng yêu cầu của đề. Bằng chứng chính vì vậy dựa vào hai khảo sát với người ngoài nhóm (10 + 8 sinh viên).
+- **Câu hỏi khảo sát còn chung chung.** Khảo sát 10 sinh viên chỉ hỏi "có hoàn thành hết bài tập hay bị sót phần nào không", chưa hỏi lần gần nhất, nguyên nhân và thời gian dành cho việc kiểm tra.
+- **Số phút từng bước là ước tính** từ trải nghiệm của người đề xuất (Problem Card #1), chưa được bấm giờ thật.
+- **Đổi candidate muộn.** Nhóm chọn bài "Theo dõi task nhóm" ở CP3 khi chưa có bằng chứng, đến CP4 mới chốt lại bài deadline, nên phải làm lại CP5–CP6.
+- **Phạm vi hẹp:** mới khảo sát sinh viên trong một lớp; chưa xử lý thông báo dạng ảnh chụp màn hình hoặc slide.
+
+**Hướng tiếp theo:**
+
+1. Phỏng vấn 2–3 sinh viên ngoài nhóm theo The Mom Test ("lần gần nhất bạn sót bài là khi nào, vì sao, đang xử lý thế nào") và bấm giờ thật quy trình hiện tại của họ.
+2. Chạy pilot 2 tuần với 3–5 sinh viên như mục 8.2, ghi thời gian, số mục phải sửa và số deadline bị sót.
+3. Sau pilot, so sánh với ngưỡng dừng ở mục 8.2 để quyết định mở rộng, điều chỉnh hay quay về phương án No AI + Rule.
 
 ## 10. Tài liệu tham khảo
 
--
+- Design Council — [Framework for Innovation (Double Diamond)](https://www.designcouncil.org.uk/resources/framework-for-innovation/)
+- Intercom, Alan Klement — [How we accidentally invented Job Stories](https://www.intercom.com/blog/accidentally-invented-job-stories/)
+- Teresa Torres — [Opportunity Solution Trees](https://www.producttalk.org/opportunity-solution-trees/); [The Interview Snapshot](https://www.producttalk.org/interview-snapshot/)
+- David Bland, Strategyzer — [Assumptions mapping](https://www.strategyzer.com/library/how-assumptions-mapping-can-focus-your-teams-on-running-experiments-that-matter)
+- Rob Fitzpatrick — [The Mom Test](https://www.momtestbook.com/)
+- Jeff Gothelf — [Business Problem vs Opportunity Statements](https://jeffgothelf.com/blog/business-problem-statement-opportunity-statement/)
+- Google PAIR — [People + AI Guidebook: User Needs](https://pair.withgoogle.com/chapter/user-needs/)
+- Anthropic — [Building effective agents](https://www.anthropic.com/research/building-effective-agents)
+- Agrawal, Gans, Goldfarb — [A Simple Tool to Start Making Decisions with the Help of AI (HBR)](https://hbr.org/2018/04/a-simple-tool-to-start-making-decisions-with-the-help-of-ai)
+- Marty Cagan, SVPG — [The Four Big Risks](https://www.svpg.com/four-big-risks/)
+- Các công cụ đã research ở mục 3.3: Canvas LMS Calendar Feed (iCal), Motion, n8n (link trong bảng research)
